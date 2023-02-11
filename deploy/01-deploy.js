@@ -19,7 +19,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     waitConfirmations: network.config.blockConfirmations || 1,
   })
   log(`ourToken deployed at`)
-  log(ourToken.address)
+  log(Token.address)
 
 //   if (
 //     !developmentChains.includes(network.name) &&
