@@ -11,9 +11,9 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 //   const contract = 
 
 
-  const ourToken = await deploy("Token", {
+  const ourToken = await deploy("TokenERC20", {
     from: deployer,
-    args: [INITIAL_SUPPLY],
+    args: [INITIAL_SUPPLY, "FToken", "FTK"],
     log: true,
     // we need to wait if on a live network so we can verify properly
     waitConfirmations: network.config.blockConfirmations || 1,
