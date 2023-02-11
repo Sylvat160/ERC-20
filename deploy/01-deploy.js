@@ -11,7 +11,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 //   const contract = 
 
 
-  const ourToken = await deploy("TokenERC20", {
+  const Token = await deploy("TokenERC20", {
     from: deployer,
     args: [INITIAL_SUPPLY, "FToken", "FTK"],
     log: true,
